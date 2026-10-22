@@ -1,12 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "/",
-      "destination": "https://redrune-market.yxu-npocum.workers.dev/"
-    },
-    {
-      "source": "/:path*",
-      "destination": "https://redrune-market.yxu-npocum.workers.dev/:path*"
+      "source": "/(.*)",
+      "destination": "/api/proxy.js"
     }
   ]
 }
